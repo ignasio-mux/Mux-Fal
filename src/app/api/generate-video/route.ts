@@ -114,9 +114,9 @@ export async function POST(request: NextRequest) {
         const result = await falClient.subscribe("fal-ai/veo3", {
             input: {
                 prompt: trimmedPrompt,
-                aspect_ratio: "16:9",
+                aspect_ratio: "9:16",
                 duration: "8s",
-                generate_audio: false,
+                generate_audio: true,
             }
         });
 
